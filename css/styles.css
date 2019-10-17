@@ -2,7 +2,7 @@
 
 
 body {
-background-color: #FFFF99;
+background-color: #1D1DC;
 }
 
 #container {
@@ -16,7 +16,11 @@ background-color: #FFFF99;
 img {
 	max-width: 100%;
 	}
+
+
 /*Styles for mobile layout*/
+
+
 
 #container {
 	width: 100%;
@@ -25,10 +29,7 @@ img {
 }
 
 header {
-	background-color: #FFFFFF;
-	margin-top: 0.2em;
-	border-radius: 0.5em;
-	text-align: center;
+		text-align: center;
 	
 	}
 	
@@ -38,6 +39,8 @@ nav {
 	font-size: 1.25em;
 	font-weight: bold;
 	text-align: center;
+	margin-top: -1.5em;
+	
 	
 	
 }
@@ -50,7 +53,7 @@ nav ul {
 	}
 	
 	nav li {
-		background-color: #009933;
+		background-color: #9D9D93;
 		border-radius: 2em;
 		list-style-type: none;
 		margin: 0.3em;
@@ -108,19 +111,42 @@ main {
 	font-size: 1em;
 	margin-top: 0.5em;
 	padding: 1em;
-	border-radius: 1em;
-	border-top: solid 0.2em #009933;
-	border-bottom: solid 0.2em #009933;
+	border-radius: 2em 0 2em 0;
+	opacity: 0.85;
 	
 
 }
+
+main a {
+	background-color: #9D9D93;
+	border-radius: 1em;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding: 0.5em;
+	text-decoration: none;
+	
+
+
+}
+	
+
+
 
 footer {
 	font-size: .70em;
 	text-align: center;
 	margin-top: 2em;
+	color: #FFFFFF;
 	
 }
+
+footer a {
+
+	color: #FFFFFF;
+	text-decoration: none;
+
+}
+
 
 
 .tablet{
@@ -137,6 +163,8 @@ footer {
 	
 }
 
+/*tablet rules */
+
 
 @media only screen and (min-width: 660px;) {
 
@@ -149,12 +177,20 @@ nav li {
 	padding-right: 0;
 	width: 18%;
 	white-space: nowrap;
+	border-radius: 0;
+	background-color: transparent;
+	
 	
 }
 
 main {
+
+
  clear: left;
- margin-top: 4em;
+ margin-top: -0.3em;
+ border-radius: 0;
+ 
+ 
  }
 	
 .mobile {
@@ -175,13 +211,13 @@ display:none;
 .items {
 display:block;
 list-style-position: inside;
-margin-bottom: 5em;
 	
 }	
 
-
 .tablet{
 	display: block;
+	margin-top: -3em;
+	margin-bottom: -1em;
 }
 
 dt { 
@@ -190,11 +226,92 @@ margin-top: 0.7em;
 
 }
 
-@media only screen and (min-width: 830px;) {
-	#container {
-	width:80%;
+
+	h1 {
+		text-align: center;
+		
+		
+	}
+		
+	figure img {
+		background-color: #1D1D1C;
+		display: inline;
+		height: 8em;
+		width: 28%;
+		margin: 1%;
+		padding: 1%;
+		
+	}
+	
+	figure a {
+		background-color: transparent;
+		padding: 0;
+		text-decoration: none;
+		}
+		
+		
+		section {
+			padding-bottom: 3em;
+			
+			}
+			
+		section h1 {
+		text-align: left;
+		}
+		
+		
+		section a {
+		background-color: transparent;
+		color: #1D1D1C;
+		font-weight: normal;
+		padding: 0;
+		text-decoration: underline;
+		
+							
+}
+
+
+.contact {
+	background-color: transparent;
+	color: #1D1D1C;
+	padding: 0;
+	text-decoration: underline;
 	
 }
+
+
+
+	
+}
+
+/* desktop rules */
+
+
+@media only screen and (min-width: 830px;) {
+	
+	
+	
+	#container {
+	backround-color: #1D1D1C;
+	
+	
+}
+
+	header {
+		text-align: left;
+		
+}
+
+nav {
+	float: right;
+	margin-top: -7em;
+	margin-right: 3em;
+	margin-bottom: 0;
+	width: 65%;
+	
+
+}
+
 
 nav ul {
 	margin:0;
@@ -203,9 +320,6 @@ nav ul {
 	}
 	
 nav li{
-border-radius: 0;
-border-top: #000000;
-border-bottom: solid #000000;
 margin-left: 0;
 margin-right: 0;
 padding: 0;
@@ -216,24 +330,109 @@ width: 20%;
 	nav li a {
 	display: inline-block;
 	padding: 0.7em;
+	text-shadow: 0.2em 0.1em #3D3D35;
+	
+	nav li a:link {
+	color:#FFFFFF;
+}
+
+
+	nav li a:visited {
+	color:#CCCCFF;
+}
+
+
+	nav li a:hover {
+	color:#9D9D93;
+	font-style: italic;
+	
+	body {
+	
+	background-color: #FFFFFF;
+
+}
 	}
 	
 	main {
-	border-style: none;
-	box-shadow: 0.5em 0.5em 0.5em #404040;
-	margin-bottom: 1em;
-	margin-top: 1em;
+	background-color: #1D1D1C;
+	
 	}
 	
 	
 	main p {
-		padding-left: 0.5em;
-		padding-right: 0.5em;
-		
+	color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	
+}
+
+	main h2 {
+		color:#FFFFFF;
 		}
+
+
+h1 { 
+color: #FFFFFF;
+
+}
+
+
+figure img {
+	height: 15em;
+	opacity: 0.7;
+}
+
+
+figure img:hover {
+	opacity: 1;
+}
+
+footer {
+	background-color: #2A2A2A;
+	margin-top: -0.2em;
+	padding: 2em;
+	
+}
+	
+	
 		
 		.items {
 			margin-bottom: 6em;
 			}
 }
+
+section {
+
+	color: #FFFFFF;
+	margin-left: 1em;
+	padding-bottom: 5em;
+}
+	
+	section a {
+
+	color: #FFFFFF;
+}
+
+section p  {
+
+	margin-left: 0em;
+
+}
+
+.contact {
+	color: #FFFFFF;
+}
+	
+
+
+	
+	}
+
+
+	
+	
+	
+	
+	
 	
